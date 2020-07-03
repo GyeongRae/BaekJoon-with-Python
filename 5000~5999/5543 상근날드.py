@@ -6,5 +6,4 @@ for i in range(0,3):
 for i in range(0,2):
     b=int(input())
     drink.append(b)
-
-    print(min(burger)+min(drink)-50)
+print(min(burger)+min(drink)-50)
