@@ -1,0 +1,11 @@
+x, y, w, h = map(int, input().split())
+case = []
+if(w-x < x-0):
+    case.append(w-x)
+else:
+    case.append(x-0)
+if(h-y < y-0):
+    case.append(h-y)
+else:
+    case.append(y-0)
+print(min(case))
