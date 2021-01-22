@@ -1,0 +1,16 @@
+import sys # 자연수 n의 값을 제한
+n = int(input())
+if(n < 0 and n > 1000000):
+    sys.exit()
+ran = len(str(n)) * 9 # 최대 자리합 
+result = 0
+for i in range(n - ran, n):
+    ans = list(map(int, str(i)))
+    result = i + sum(ans)
+
+    if(n == result):
+        print(i)
+        break
+
+    if(i == n):
+        print(0)
