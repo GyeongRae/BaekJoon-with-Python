@@ -1,0 +1,12 @@
+n = int(input())
+
+for i in range(1, n+1): # n+ 1 이상은 더 할 수 없다.
+    plus = list(map(int, str(i))) # 분해한 수를 리스트에 저장한다.
+    ans = i + sum(plus)
+
+    if(ans == n):
+        print(i)
+        break
+
+    if(n == i):
+        print(0)
